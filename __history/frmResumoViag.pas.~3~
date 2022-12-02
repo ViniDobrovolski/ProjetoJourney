@@ -1,0 +1,45 @@
+unit frmResumoViag;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Layouts, FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TfrmResumo = class(TForm)
+    Layout1: TLayout;
+    txtTempo: TEdit;
+    txtKM: TEdit;
+    btnVoltar: TButton;
+    Label7: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    lblConG: TLabel;
+    lblConE: TLabel;
+    lblConD: TLabel;
+    lbl_ConsumoG: TLabel;
+    lbl_ConsumoE: TLabel;
+    lbl_ConsumoD: TLabel;
+    procedure btnVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmResumo: TfrmResumo;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmResumo.btnVoltarClick(Sender: TObject);
+begin
+  frmResumo.release;
+  frmResumo:=nil;
+end;
+
+end.

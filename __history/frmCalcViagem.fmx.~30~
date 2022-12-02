@@ -1,0 +1,272 @@
+object Calculo: TCalculo
+  Left = 0
+  Top = 0
+  Caption = 'Calculo da Viagem'
+  ClientHeight = 500
+  ClientWidth = 320
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFF0C094F
+      Offset = 0.208074539899826100
+    end
+    item
+      Color = claWhite
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.StartPosition.X = 0.850103795528411900
+  Fill.Gradient.StartPosition.Y = 1.000000000000000000
+  Fill.Gradient.StopPosition.X = 0.149896204471588100
+  Fill.Gradient.StopPosition.Y = 0.000000003202160315
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Size.Width = 321.000000000000000000
+    Size.Height = 505.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object Label8: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 144.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Dura'#231#227'o:'
+      TabOrder = 12
+    end
+    object txtDestino: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 144.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtOrigem: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 144.000000000000000000
+      Position.Y = 41.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtValorD: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 104.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtValorE: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 104.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtValorG: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 104.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lbl_distancia: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 24.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 15
+    end
+    object lbl_tempo: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 136.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 17
+    end
+    object Label4: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 32.000000000000000000
+      Position.Y = 248.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Valor Gasolina'
+      TabOrder = 19
+    end
+    object Label5: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 32.000000000000000000
+      Position.Y = 312.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Valor Ethanol'
+      TabOrder = 11
+    end
+    object Label6: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 24.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Distancia:'
+      TabOrder = 13
+    end
+    object Label7: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 32.000000000000000000
+      Position.Y = 376.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Valor Diesel'
+      TabOrder = 10
+    end
+    object btnAdicionarVeic: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 27
+      Text = 'Adicionar Veiculo'
+      OnClick = btnAdicionarVeicClick
+    end
+    object btnCalcular: TButton
+      Position.X = 152.000000000000000000
+      Position.Y = 432.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Calcular Viagem'
+      OnClick = btnCalcularClick
+    end
+    object btnLocal: TButton
+      Position.X = 200.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Calcular Rota'
+      OnClick = btnLocalClick
+    end
+    object btnLocalizacao: TButton
+      Position.X = 264.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 23
+      Text = '...'
+      OnClick = btnLocalizacaoClick
+    end
+    object comboB: TComboBox
+      Position.X = 16.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = comboBChange
+      OnMouseEnter = comboBMouseEnter
+    end
+    object Label1: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 152.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Destino'
+      TabOrder = 18
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 152.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Origem'
+      TabOrder = 16
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Veiculo'
+      TabOrder = 14
+    end
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'https://maps.googleapis.com/maps/api/distancematrix'
+    Params = <>
+    Left = 272
+    Top = 80
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 240
+    Top = 152
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 240
+    Top = 224
+  end
+end

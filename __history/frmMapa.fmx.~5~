@@ -1,0 +1,58 @@
+object GPS: TGPS
+  Left = 0
+  Top = 0
+  Caption = 'GPS'
+  ClientHeight = 500
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 321.000000000000000000
+    Size.Height = 505.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object MapView1: TMapView
+      Position.X = 8.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Origem: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 136.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Origem'
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Text = 'Label1'
+      Visible = False
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Text = 'Label2'
+      Visible = False
+      TabOrder = 3
+    end
+  end
+  object LocationSensor1: TLocationSensor
+    ActivityType = Other
+    UsageAuthorization = WhenInUse
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 208
+    Top = 72
+  end
+end

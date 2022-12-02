@@ -1,0 +1,202 @@
+object CadVeiculo: TCadVeiculo
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 500
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Dots
+    Sizes = (
+      320s
+      500s)
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem3'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Label3: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 120.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Veiculo'
+        TabOrder = 0
+      end
+      object Label6: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 136.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Placa'
+        TabOrder = 12
+      end
+      object txtSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Position.X = 72.000000000000000000
+        Position.Y = 144.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object BtnCadastrar: TButton
+        StyledSettings = [Family]
+        Position.X = 184.000000000000000000
+        Position.Y = 296.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        Text = 'Cadastrar'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TintColor = xFFF25F19
+      end
+      object txtPlaca: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 72.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object Label2: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 128.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Descri'#231#227'o'
+        TabOrder = 11
+      end
+      object txtTanque: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Position.X = 96.000000000000000000
+        Position.Y = 216.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object txtGasolina: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 96.000000000000000000
+        Position.Y = 272.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object txtEthanol: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 96.000000000000000000
+        Position.Y = 328.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object txtDiesel: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 96.000000000000000000
+        Position.Y = 384.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claSlateblue
+      end
+      object Label1: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 32.000000000000000000
+        Position.Y = 208.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Litros Tanque'
+        TabOrder = 10
+      end
+      object Label4: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 32.000000000000000000
+        Position.Y = 264.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'M'#233'dia Gasolina'
+        TabOrder = 9
+      end
+      object Label5: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 32.000000000000000000
+        Position.Y = 320.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'M'#233'dia Ethanol'
+        TabOrder = 8
+      end
+      object Label7: TLabel
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Position.X = 32.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'M'#233'dia Diesel'
+        TabOrder = 7
+      end
+    end
+  end
+end

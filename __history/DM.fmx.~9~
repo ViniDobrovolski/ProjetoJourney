@@ -1,0 +1,87 @@
+object UDM: TUDM
+  Left = 0
+  Top = 0
+  Caption = 'Form7'
+  ClientHeight = 333
+  ClientWidth = 447
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=D:\Users\VODOBROVOLSK.UNIVEL\Desktop\Projeto - 2'#176' BIM\B' +
+        'anco\bd.db'
+      'LockingMode=Normal'
+      'DriverID=SQLite')
+    Connected = True
+    Left = 64
+    Top = 48
+  end
+  object FDQueryPessoa: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from Login'
+      'where login=:pNome')
+    Left = 192
+    Top = 160
+    ParamData = <
+      item
+        Name = 'PNOME'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end>
+    object FDQueryPessoaid: TWideStringField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Size = 32767
+    end
+    object FDQueryPessoalogin: TStringField
+      FieldName = 'login'
+      Origin = 'login'
+      Size = 60
+    end
+    object FDQueryPessoasenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+    end
+  end
+  object FDQueryCarro: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select id,descricao from Veiculo')
+    Left = 296
+    Top = 136
+    object FDQueryCarroid: TWideStringField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Size = 32767
+    end
+    object FDQueryCarroplaca: TStringField
+      FieldName = 'placa'
+      Origin = 'placa'
+      Size = 10
+    end
+    object FDQueryCarrodescricao: TStringField
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      Size = 50
+    end
+    object FDQueryCarromediaG: TLargeintField
+      FieldName = 'mediaG'
+      Origin = 'mediaG'
+    end
+    object FDQueryCarromediaE: TLargeintField
+      FieldName = 'mediaE'
+      Origin = 'mediaE'
+    end
+    object FDQueryCarromediaD: TLargeintField
+      FieldName = 'mediaD'
+      Origin = 'mediaD'
+    end
+  end
+end

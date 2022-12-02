@@ -1,0 +1,24 @@
+program Project1;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  frmLogin in 'frmLogin.pas' {Login},
+  frmCadVeiculo in 'frmCadVeiculo.pas' {CadVeiculo},
+  frmCalcViagem in 'frmCalcViagem.pas' {Calculo},
+  DM in 'DM.pas' {UDM},
+  frmResumoViag in 'frmResumoViag.pas' {frmResumo},
+  frmMapa in 'frmMapa.pas' {GPS};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TLogin, Login);
+  Application.CreateForm(TCadVeiculo, CadVeiculo);
+  Application.CreateForm(TCalculo, Calculo);
+  Application.CreateForm(TUDM, UDM);
+  Application.CreateForm(TfrmResumo, frmResumo);
+  Application.CreateForm(TGPS, GPS);
+  Application.Run;
+end.
